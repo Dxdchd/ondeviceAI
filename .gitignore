@@ -1,0 +1,39 @@
+# Local environment and caches
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Large local data and model artifacts
+data/*
+!data/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.pte
+*.tflite
+
+# Local training logs
+runs/
+wandb/
+
+# Generated experiment outputs
+outputs/*
+!outputs/.gitkeep
+
+# Downloaded archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
