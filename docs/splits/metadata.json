@@ -1,0 +1,28 @@
+{
+  "dataset": "CUB-200-2011",
+  "python_version": "3.11.4",
+  "split_seed": 42,
+  "validation_fraction_per_class": 0.2,
+  "validation_count_rule": "round(class_count * 0.2)",
+  "image_order": "images.txt order within each class before shuffling",
+  "class_order": "first occurrence in images.txt",
+  "rng": "one random.Random(42) instance shared across classes",
+  "output_order": "class iteration order, shuffled order within each class",
+  "label_index": "int(class_id) - 1",
+  "counts": {
+    "train": 4794,
+    "validation": 1200,
+    "test": 5794
+  },
+  "source_sha256": {
+    "images.txt": "e1cfc5ed1f4bd1b838040784b6f75c44f7a25d9b31707a3adab49ec694618c1f",
+    "image_class_labels.txt": "e9df8c96d897994a245746fe2c98914b9b31f5342bddc6e8b06bdfbf45e49b02",
+    "classes.txt": "66a884364a73edde6c71eeb7fd5d8bb791e80979b64759bd6a5d5d209bdc02ba",
+    "train_test_split.txt": "8bbbfcc09b4d3c9c6e3e40c9874bd863eb6658f4f456e472df1b33d3403d2600"
+  },
+  "split_sha256": {
+    "train_ids.txt": "539eedcc691bd889e59106d8f9b167b4481f2b5461413148920a4018407024f9",
+    "validation_ids.txt": "45e0b821855a851c3d17d0b5d1c85ee854e388aeb0971a6a68e176798504780d",
+    "test_ids.txt": "de2dd4ab1b483bdce28c72d2290243ced14a4f3181b23426c76e82c42ebfcfe5"
+  }
+}
