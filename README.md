@@ -125,6 +125,8 @@ data/
 
 노트북은 `데이터 준비 → 이미지 전처리 → Dataset과 DataLoader` 순서다. 원본 이미지, crop과 padding 비교, 반전과 밝기 예시를 확인한 뒤 배치 형태를 출력한다.
 
+데이터 읽기, 분할, 전처리와 DataLoader 생성은 [data_loader.py](data_loader.py)에 정의한다. `dataLoader.ipynb`와 [baseline.ipynb](notebooks/baseline.ipynb)는 이 모듈을 import하며, Baseline 실행 전에 데이터 실습 노트북을 실행할 필요는 없다. 공통 데이터 처리 방식을 바꿀 때는 이 모듈을 수정한다.
+
 ```text
 이미지 배치: torch.Size([32, 3, 224, 224])
 레이블 배치: torch.Size([32])
@@ -144,7 +146,9 @@ ondeviceAI/
 ├── requirements.txt
 ├── AGENTS.md
 ├── .gitignore
+├── data_loader.py              # 두 노트북에서 사용하는 공통 데이터 처리
 ├── notebooks/dataLoader.ipynb
+├── notebooks/baseline.ipynb
 ├── docs/
 │   ├── assets/                 # README 썸네일
 │   ├── splits/                 # 공유할 분할 ID 목록과 생성 기준
